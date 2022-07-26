@@ -24,9 +24,13 @@ limitations under the License. */
 
 #include "graph.cpp"
 
-#include "xrt/experimental/xrt_aie.h"
-#include "xrt/experimental/xrt_kernel.h"
-#include "xrt/experimental/xrt_bo.h"
+// #include "xrt/experimental/xrt_aie.h"
+// #include "xrt/experimental/xrt_kernel.h"
+// #include "xrt/experimental/xrt_bo.h"
+
+#include "xrt/xrt_aie.h"
+#include "xrt/xrt_kernel.h"
+#include "xrt/xrt_bo.h"
 
 #include "adf/adf_api/XRTConfig.h"
 

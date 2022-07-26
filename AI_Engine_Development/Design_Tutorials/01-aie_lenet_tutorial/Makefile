@@ -245,6 +245,7 @@ GCC_FLAGS += -DXAIE_DEBUG
 GCC_FLAGS += -DLENET_INSTS=$(ITER_CNT)
 
 GCC_INC_FLAGS := -I$(SDKTARGETSYSROOT)/usr/include/xrt
+GCC_INC_FLAGS := -I/opt/xilinx/xrt/include
 GCC_INC_FLAGS += -I$(XILINX_VITIS)/aietools/include/
 GCC_INC_FLAGS += -I$(SDKTARGETSYSROOT)/usr/include 
 GCC_INC_FLAGS += -I$(SDKTARGETSYSROOT)/usr/lib
@@ -252,6 +253,7 @@ GCC_INC_FLAGS += -I$(AIE_SRC_REPO)
 GCC_INC_FLAGS += -I$(HOST_APP_SRC_REPO)
 
 GCC_INC_LIB := -L$(SDKTARGETSYSROOT)/usr/lib 
+GCC_INC_LIB := -L/opt/xilinx/xrt/lib
 GCC_INC_LIB += -L$(XILINX_VITIS)/aietools/lib/aarch64.o 
 GCC_INC_LIB += -L$(XILINX_VITIS)/aietools/lib/lnx64.o
 
